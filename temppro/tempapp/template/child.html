@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+{%extends 'welcome.html'%}
+{%block child_block%}
+  {%load cust_filter %}
+  <ul>
+    <li>{{msg1|lower}}</li>
+    <li>{{msg2|upper}}</li>
+    <li>{{msg3|add:"--durga"</li>
+  </ul>
+{%endblock%}

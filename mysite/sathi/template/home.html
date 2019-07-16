@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+       thish web site
+       <form method='post'>
+       {% csrf_token %}
+       {{form.as_p}}
+       </form>
+{% end block content %} 

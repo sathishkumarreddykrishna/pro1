@@ -1,0 +1,25 @@
+{% load staticfiles %}%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> today date</title> 
+</head>
+<body>
+    
+    {{ body }}
+    <ul>
+        {% for athlete in body %}
+           <li>{{ athlete}}</li>
+        {% empty %}
+            <li>Sorry, no athletes in this list.</li>
+        {% endfor %}
+    </ul>
+
+    <p> hello world today is {{today}}</p>
+    {% filter force_escape|upper %}
+    This text will be HTML-escaped, and will appear in all lowercase.
+    {% endfilter %}
+    
+    
+</body>
+</html>
